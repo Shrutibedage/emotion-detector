@@ -27,7 +27,7 @@
   <form method="post" action="/">
     <label for="textToAnalyze"><strong>Text to analyze</strong></label>
     <textarea id="textToAnalyze" name="textToAnalyze"
-      placeholder="I am so happy today!" required>{{ request.form.get('textToAnalyze', '') }}</textarea>
+      placeholder="I am so happy today!" >{{ request.form.get('textToAnalyze', '') }}</textarea>
     <button type="submit">Analyze emotion</button>
   </form>
   {% if error %}
